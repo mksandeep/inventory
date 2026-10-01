@@ -1,0 +1,85 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2026-04-17T15:28:58.634-04:00  INFO 12792 --- [InventoryApi] [           main] org.sam.InventoryApiApplication          : Starting InventoryApiApplication using Java 20.0.1 with PID 12792 (C:\Users\mksan\git\inventory\InventoryApi\build\classes\java\main started by mksan in C:\Users\mksan\git\inventory\InventoryApi)
+2026-04-17T15:28:58.639-04:00  INFO 12792 --- [InventoryApi] [           main] org.sam.InventoryApiApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-04-17T15:29:01.585-04:00  INFO 12792 --- [InventoryApi] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-17T15:29:01.801-04:00  INFO 12792 --- [InventoryApi] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193 ms. Found 6 JPA repository interfaces.
+2026-04-17T15:29:03.609-04:00  INFO 12792 --- [InventoryApi] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-17T15:29:03.639-04:00  INFO 12792 --- [InventoryApi] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-17T15:29:03.639-04:00  INFO 12792 --- [InventoryApi] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-04-17T15:29:03.876-04:00  INFO 12792 --- [InventoryApi] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-17T15:29:03.879-04:00  INFO 12792 --- [InventoryApi] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5123 ms
+2026-04-17T15:29:04.210-04:00  INFO 12792 --- [InventoryApi] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-17T15:29:04.829-04:00  INFO 12792 --- [InventoryApi] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@21edd891
+2026-04-17T15:29:04.834-04:00  INFO 12792 --- [InventoryApi] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-17T15:29:05.101-04:00  INFO 12792 --- [InventoryApi] [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-04-17T15:29:05.102-04:00  INFO 12792 --- [InventoryApi] [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-04-17T15:29:05.102-04:00  INFO 12792 --- [InventoryApi] [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-04-17T15:29:05.133-04:00  INFO 12792 --- [InventoryApi] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/inventory_db (PostgreSQL 18.3)
+2026-04-17T15:29:05.146-04:00  WARN 12792 --- [InventoryApi] [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 18.3 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+2026-04-17T15:29:05.260-04:00  INFO 12792 --- [InventoryApi] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.075s)
+2026-04-17T15:29:05.287-04:00  INFO 12792 --- [InventoryApi] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "sam": 5
+2026-04-17T15:29:05.297-04:00  INFO 12792 --- [InventoryApi] [           main] o.f.core.internal.command.DbMigrate      : Schema "sam" is up to date. No migration necessary.
+2026-04-17T15:29:05.540-04:00  INFO 12792 --- [InventoryApi] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-17T15:29:05.721-04:00  INFO 12792 --- [InventoryApi] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-04-17T15:29:05.817-04:00  INFO 12792 --- [InventoryApi] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-17T15:29:06.425-04:00  INFO 12792 --- [InventoryApi] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-17T15:29:06.540-04:00  WARN 12792 --- [InventoryApi] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-17T15:29:11.660-04:00  INFO 12792 --- [InventoryApi] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-17T15:29:11.973-04:00  INFO 12792 --- [InventoryApi] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-17T15:29:13.684-04:00  INFO 12792 --- [InventoryApi] [           main] o.sam.inventory.config.SecurityConfig    : Creating AuthenticationManager from AuthenticationConfiguration
+2026-04-17T15:29:13.740-04:00  INFO 12792 --- [InventoryApi] [           main] o.sam.inventory.config.SecurityConfig    : Configuring DaoAuthenticationProvider
+2026-04-17T15:29:13.970-04:00  INFO 12792 --- [InventoryApi] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-17T15:29:15.620-04:00  WARN 12792 --- [InventoryApi] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-17T15:29:16.188-04:00  INFO 12792 --- [InventoryApi] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ed5cf29, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4dc24d88, org.springframework.security.web.context.SecurityContextHolderFilter@19f811a2, org.springframework.security.web.header.HeaderWriterFilter@6bd01b0e, org.springframework.security.web.authentication.logout.LogoutFilter@3bbd9232, org.sam.inventory.security.JwtAuthenticationFilter@78a0d664, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eb3b4d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d4ae17e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d5fb53a, org.springframework.security.web.session.SessionManagementFilter@5f82dd9a, org.springframework.security.web.access.ExceptionTranslationFilter@56c75b4f, org.springframework.security.web.access.intercept.AuthorizationFilter@ee9b7ac]
+2026-04-17T15:29:16.733-04:00  INFO 12792 --- [InventoryApi] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-17T15:29:16.748-04:00  INFO 12792 --- [InventoryApi] [           main] org.sam.InventoryApiApplication          : Started InventoryApiApplication in 19.036 seconds (process running for 19.782)
+2026-04-17T15:29:38.777-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17T15:29:38.777-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-17T15:29:38.778-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-17T15:29:39.333-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-4] o.s.i.service.AuthenticationService      : Login attempt for email: admin@example.com
+2026-04-17T15:29:39.439-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-4] o.s.i.service.CustomUserDetailsService   : Loading user by email: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+Hibernate: select r1_0.user_id,r1_1.role_id,r1_1.description,r1_1.name from sam.user_roles r1_0 join sam.roles r1_1 on r1_1.role_id=r1_0.role_id where r1_0.user_id=?
+2026-04-17T15:29:39.588-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-4] o.s.i.service.CustomUserDetailsService   : User found: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+2026-04-17T15:29:39.880-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-4] o.s.i.service.AuthenticationService      : Login successful for email: admin@example.com
+2026-04-17T15:29:40.773-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-5] o.s.i.service.AuthenticationService      : Login attempt for email: admin@example.com
+2026-04-17T15:29:40.773-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-5] o.s.i.service.CustomUserDetailsService   : Loading user by email: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+Hibernate: select r1_0.user_id,r1_1.role_id,r1_1.description,r1_1.name from sam.user_roles r1_0 join sam.roles r1_1 on r1_1.role_id=r1_0.role_id where r1_0.user_id=?
+2026-04-17T15:29:40.780-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-5] o.s.i.service.CustomUserDetailsService   : User found: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+2026-04-17T15:29:40.918-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-5] o.s.i.service.AuthenticationService      : Login successful for email: admin@example.com
+2026-04-17T15:29:41.358-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 755 ms
+2026-04-17T15:29:51.145-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.AuthenticationService      : Login attempt for email: admin@example.com
+2026-04-17T15:29:51.145-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.CustomUserDetailsService   : Loading user by email: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+Hibernate: select r1_0.user_id,r1_1.role_id,r1_1.description,r1_1.name from sam.user_roles r1_0 join sam.roles r1_1 on r1_1.role_id=r1_0.role_id where r1_0.user_id=?
+2026-04-17T15:29:51.152-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.CustomUserDetailsService   : User found: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+2026-04-17T15:29:51.235-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.AuthenticationService      : Login successful for email: admin@example.com
+2026-04-17T15:31:59.227-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.AuthenticationService      : Login attempt for email: admin@example.com
+2026-04-17T15:31:59.254-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.CustomUserDetailsService   : Loading user by email: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+Hibernate: select r1_0.user_id,r1_1.role_id,r1_1.description,r1_1.name from sam.user_roles r1_0 join sam.roles r1_1 on r1_1.role_id=r1_0.role_id where r1_0.user_id=?
+2026-04-17T15:31:59.291-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.CustomUserDetailsService   : User found: admin@example.com
+Hibernate: select u1_0.user_id,u1_0.active,u1_0.created_at,u1_0.created_by,u1_0.email,u1_0.full_name,u1_0.password,u1_0.updated_at from sam.users u1_0 where u1_0.email=?
+2026-04-17T15:31:59.376-04:00  INFO 12792 --- [InventoryApi] [nio-8080-exec-2] o.s.i.service.AuthenticationService      : Login successful for email: admin@example.com
+2026-04-17T17:32:43.044-04:00  WARN 12792 --- [InventoryApi] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s929ms679µs100ns).
+^C

@@ -1,0 +1,5 @@
+--- DEBUG ADMIN USER ---
+--- LOGIN RESPONSE STATUS ---
+200
+--- LOGIN RESPONSE BODY ---
+{"token":"eyJhbGciOiJIUzUxMiJ9.eyJyb2xlcyI6WyJBRE1JTiIsIk1BTkFHRVIiXSwiZW1haWwiOiJhZG1pbkBleGFtcGxlLmNvbSIsInN1YiI6ImFkbWluQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc2NDU0MTgwLCJleHAiOjE3NzY0NTUwODB9.ztG98HacUakDRQ2D1BgXdJVVMRjNAwAhY2bKJSfMbX2loETT5JWmZgZ6RaVs3zUEz8NWb_uIldcJVs_mMIpI5A","refreshToken":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsImlhdCI6MTc3NjQ1NDE4MCwiZXhwIjoxNzc3MDU4OTgwfQ.iCrPhpxormljj5eEQN46Sf2o1LoNzzGfyJDqOu3H1yN2r7c5NwR8CkKm5OhmOg7PsiriaB_fOiI8TR5jAZD9tQ","email":"admin@example.com","fullName":"Administrator","roles":["ADMIN","MANAGER"]}
